@@ -1,0 +1,22 @@
+name: NewRelic GUID fetcher
+description: Fetches an existing GUID from NewRelic
+branding:
+  icon: arrow-down-circle
+  color: gray-dark
+author: Zijad Aljic
+inputs:
+  newrelicAppID:
+    description: NewRelic app ID to fetch the GUID for
+    default: ""
+  newrelicAPIKey:
+    description: NewRelic API key
+    default: ""
+  newrelicRegion:
+    description: Region the NewRelic account is running in
+    default: US
+outputs:
+  appID:
+    description: GUID output
+runs:
+  using: docker
+  image: Dockerfile
