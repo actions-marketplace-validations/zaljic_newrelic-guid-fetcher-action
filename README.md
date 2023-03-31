@@ -80,7 +80,7 @@ steps:
   # Use the output from the `newrelic-app-id` step to fetch the GUID of the app
   - name: Fetch NewRelic app GUID
     id: newrelic-app-guid
-    uses: zaljic/newrelic-app-guid-fetcher-action@v1
+    uses: zaljic/newrelic-guid-fetcher-action@v1
     with:
       newrelicApiKey: ${{ secrets.NEWRELIC_API_KEY }}
       newRelicRegion: EU
