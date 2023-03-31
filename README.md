@@ -19,7 +19,7 @@ To use the action, the NewRelic API key must be provided as a secret in the repo
   with:
     newrelicApiKey: ${{ secrets.NEWRELIC_API_KEY }}
     newRelicRegion: EU
-    appName: my-app-name
+    newrelicAppID: my-app-id
 ```
 
 ### Inputs
@@ -84,7 +84,7 @@ steps:
     with:
       newrelicApiKey: ${{ secrets.NEWRELIC_API_KEY }}
       newRelicRegion: EU
-      appID: ${{ steps.newrelic-app-id.outputs.appID }}
+      newrelicAppID: ${{ steps.newrelic-app-id.outputs.appID }}
 
   # Use the output from the `newrelic-app-guid` as input for the newrelic deployment-marker-action
   - name: Create NewRelic deployment marker

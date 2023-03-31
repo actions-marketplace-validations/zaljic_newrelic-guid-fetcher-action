@@ -15,7 +15,7 @@ inputs:
     description: Region the NewRelic account is running in
     default: US
 outputs:
-  appID:
+  appGUID:
     description: GUID output
 runs:
   using: docker
